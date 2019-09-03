@@ -9,3 +9,4 @@ Exercism's C# Track
 2. [Two Fer](/two-fer)
 3. [Leap](/leap)
 4. [Gigasecond](/gigasecond)
+5. [Resistor Color](/resistor-color)
