@@ -2,7 +2,7 @@
 
 public static class ResistorColor
 {
-    private static string[] colors = {
+    private readonly static string[] colors = {
         "black", 
         "brown", 
         "red", 
@@ -21,7 +21,9 @@ public static class ResistorColor
     }
 
     public static string[] Colors()
-    {
-        return colors;
+    {   
+        string[] colorsCopy = new string[colors.Length];
+        Array.Copy(colors, colorsCopy, colors.Length);
+        return colorsCopy;
     }
 }
