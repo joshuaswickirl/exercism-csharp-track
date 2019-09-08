@@ -11,3 +11,4 @@ Exercism's C# Track
 4. [Gigasecond](/gigasecond)
 5. [Resistor Color](/resistor-color)
 6. [Space Age](/space-age)
+7. [High Scores](/high-scores)
