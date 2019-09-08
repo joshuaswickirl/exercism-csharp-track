@@ -1,50 +1,20 @@
-using System;
-
+// SpaceAge converts an age in seconds to the number of 
+// years on a given planet
 public class SpaceAge
 {
-    private double spaceAge;
+    private readonly double earthAge;
     public SpaceAge(int seconds)
     {
-        spaceAge = (seconds / 60.0 / 60.0 / 24.0 / 365.25);
+        double earthYearInSeconds = 31557600.0;
+        earthAge = seconds / earthYearInSeconds;
     }
 
-    public double OnEarth()
-    {
-        return spaceAge / 1.00;
-    }
-
-    public double OnMercury()
-    {
-        return spaceAge / 0.2408467;
-    }
-
-    public double OnVenus()
-    {
-        return spaceAge / 0.61519726;
-    }
-
-    public double OnMars()
-    {
-        return spaceAge / 1.8808158;
-    }
-
-    public double OnJupiter()
-    {
-        return spaceAge / 11.862615;
-    }
-
-    public double OnSaturn()
-    {
-        return spaceAge / 29.447498;
-    }
-
-    public double OnUranus()
-    {
-        return spaceAge / 84.016846;
-    }
-
-    public double OnNeptune()
-    {
-        return spaceAge / 164.79132;
-    }
+    public double OnEarth() => earthAge / 1.00;
+    public double OnMercury() => earthAge / 0.2408467;
+    public double OnVenus() => earthAge / 0.61519726;
+    public double OnMars() => earthAge / 1.8808158;
+    public double OnJupiter() => earthAge / 11.862615;
+    public double OnSaturn() => earthAge / 29.447498;
+    public double OnUranus() => earthAge / 84.016846;
+    public double OnNeptune() => earthAge / 164.79132;
 }
