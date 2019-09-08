@@ -5,7 +5,7 @@ public class SpaceAge
     private readonly double earthAge;
     public SpaceAge(int seconds)
     {
-        double earthYearInSeconds = 31557600.0;
+        const double earthYearInSeconds = 31557600.0;
         earthAge = seconds / earthYearInSeconds;
     }
 
