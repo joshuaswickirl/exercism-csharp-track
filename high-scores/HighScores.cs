@@ -15,7 +15,6 @@ public class HighScores
     
     public List<int> PersonalTopThree()
     {
-        scores.Sort();
-        return Enumerable.Reverse(scores).Take(3).ToList();
+        return scores.OrderByDescending(s => s).Take(3).ToList();
     }
 }
