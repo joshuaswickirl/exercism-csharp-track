@@ -13,8 +13,6 @@ public class HighScores
     
     public int PersonalBest() => scores.Max();
     
-    public List<int> PersonalTopThree()
-    {
-        return scores.OrderByDescending(s => s).Take(3).ToList();
-    }
+    public List<int> PersonalTopThree() => scores.OrderByDescending(s => s).Take(3).ToList();
+
 }
