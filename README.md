@@ -12,3 +12,4 @@ Exercism's C# Track
 5. [Resistor Color](/resistor-color)
 6. [Space Age](/space-age)
 7. [High Scores](/high-scores)
+8. [Hamming](/hamming)
