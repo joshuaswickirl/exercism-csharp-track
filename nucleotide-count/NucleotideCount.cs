@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 public static class NucleotideCount
@@ -14,7 +13,7 @@ public static class NucleotideCount
 
         for (int i=0; i < sequence.Length; i++) {
             if (!total.ContainsKey(sequence[i])) {
-                throw new System.ArgumentException("Sequence contains invalid nucleotide(s)");
+                throw new System.ArgumentException("Sequence contains invalid nucleotide.");
             }
             
             total[sequence[i]]++;
