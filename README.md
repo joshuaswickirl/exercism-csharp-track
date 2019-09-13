@@ -13,3 +13,4 @@ Exercism's C# Track
 6. [Space Age](/space-age)
 7. [High Scores](/high-scores)
 8. [Hamming](/hamming)
+9. [Nucleotide Count](/nucleotide-count)
