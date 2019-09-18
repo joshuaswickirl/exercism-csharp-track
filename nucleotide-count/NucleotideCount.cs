@@ -11,12 +11,12 @@ public static class NucleotideCount
             ['C'] = 0
         };
 
-        for (int i=0; i < sequence.Length; i++) {
-            if (!total.ContainsKey(sequence[i])) {
+        foreach (char character in sequence) {
+            if (!total.ContainsKey(character)) {
                 throw new System.ArgumentException("Sequence contains invalid nucleotide.");
             }
             
-            total[sequence[i]]++;
+            total[character]++;
         }
         
         return total;
