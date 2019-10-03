@@ -3,59 +3,54 @@ using System.Collections.Generic;
 public class Robot
 {
 
-    private static HashSet<string> usedNames = new HashSet<string>();
+    private static HashSet<string> _usedNames = new HashSet<string>();
+    private string _name;
+    private static string _chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    private string name;
-
-    public Robot()
-    {
-        name = GenerateName();
-    }
+    public Robot() => _name = GenerateName();
 
     public string Name
     {
         get
         {
-            return name;
+            return _name;
         }
     }
 
     public string GenerateName()
     {
         string newName = "";
-        bool uniqueName = false;
-        
-        const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-        while (uniqueName == false) {
-            newName = "";
-            int numb = random.Next(100,1000);
-            string letters = "";
-            
-            for (int i = 0; i <= 1; i++)
-            {
-                letters += chars[random.Next(chars.Length)];
-            }
-            
-            newName = letters + numb.ToString(); 
-
-            if (!usedNames.Contains(newName)) {
+        while (true) {
+            newName = TwoLetters() + ThreeDigits();
+            if (NameIsUnique(newName)) {
                 break;
             }
         }
-
-        usedNames.Add(newName);
+        _usedNames.Add(newName);
         return newName;
     }
 
     public void Reset()
     {
-        if (usedNames.Contains(name)) {
-            usedNames.Remove(name);
+        if (_usedNames.Contains(_name)) {
+            _usedNames.Remove(_name);
         }
-        name = GenerateName();
-        
+        _name = GenerateName();
     }
+
+    private string TwoLetters()
+    {
+        string letters = "";            
+        for (int i = 0; i <= 1; i++)
+        {
+            letters += _chars[random.Next(_chars.Length)];
+        }
+        return letters;
+    }
+
+    private string ThreeDigits() => random.Next(100,1000).ToString();
+    
+    private bool NameIsUnique(string name) => _usedNames.Contains(name) ? false : true;
 
     private static Random random = new Random();
 }
