@@ -5,7 +5,6 @@ public class Robot
 
     private static HashSet<string> _usedNames = new HashSet<string>();
     private string _name;
-    private static string _chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public Robot() => _name = GenerateName();
 
@@ -43,7 +42,7 @@ public class Robot
         string letters = "";            
         for (int i = 0; i <= 1; i++)
         {
-            letters += _chars[random.Next(_chars.Length)];
+            letters += Convert.ToChar(random.Next(65,90));
         }
         return letters;
     }
