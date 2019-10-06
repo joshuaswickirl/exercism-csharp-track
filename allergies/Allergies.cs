@@ -17,7 +17,7 @@ public enum Allergen
 
 public class Allergies
 {
-    private Dictionary<Allergen, bool> _allergyMask = new Dictionary<Allergen, bool>();
+    private Dictionary<Allergen, bool> _allergies = new Dictionary<Allergen, bool>();
 
     public Allergies(int mask)
     {
@@ -25,16 +25,16 @@ public class Allergies
         int index = 0;
         foreach(Allergen allergen in Enum.GetValues(typeof(Allergen)))
         {
-            _allergyMask[allergen] = maskArray.Get(index);
+            _allergies[allergen] = maskArray.Get(index);
             index++;
         }
     }
 
-    public bool IsAllergicTo(Allergen allergen) => _allergyMask[allergen];
+    public bool IsAllergicTo(Allergen allergen) => _allergies[allergen];
 
-    public Allergen[] List() => _allergyMask
+    public Allergen[] List() => _allergies
                                     .Keys
-                                    .Where(allergen => _allergyMask[allergen])
+                                    .Where(allergen => _allergies[allergen])
                                     .Cast<Allergen>()
                                     .ToArray();
 }
