@@ -5,6 +5,10 @@ public class Robot
 
     private static HashSet<string> _usedNames = new HashSet<string>();
     private string _name;
+    private static int _asciiA = 65;
+    private static int _asciiZ = 90;
+    private static int _between100 = 100;
+    private static int _and1000 = 1000;
 
     public Robot() => _name = GenerateName();
 
@@ -42,12 +46,12 @@ public class Robot
         string letters = "";            
         for (int i = 0; i <= 1; i++)
         {
-            letters += Convert.ToChar(random.Next(65,90));
+            letters += Convert.ToChar(random.Next(_asciiA,_asciiZ));
         }
         return letters;
     }
 
-    private string ThreeDigits() => random.Next(100,1000).ToString();
+    private string ThreeDigits() => random.Next(_between100,_and1000).ToString();
     
     private bool NameIsUnique(string name) => _usedNames.Contains(name) ? false : true;
 
