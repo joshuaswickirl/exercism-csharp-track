@@ -15,3 +15,4 @@ Exercism's C# Track
 8.  [Hamming](/hamming)
 9.  [Nucleotide Count](/nucleotide-count)
 10. [Robot Name](/robot-name)
+11. [Allergies](/allergies)
