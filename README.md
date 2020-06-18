@@ -19,7 +19,8 @@ Core Exercises (11/22)
 10. [Robot Name](/robot-name)
 11. [Allergies](/allergies)
 
-Extra Exercises (1/98)
+Extra Exercises (2/98)
 ----------------------
 ### Easy
+- [Isogram](/isogram)
 - [Pangram](/pangram)
