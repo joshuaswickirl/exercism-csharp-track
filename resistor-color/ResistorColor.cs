@@ -15,15 +15,9 @@ public static class ResistorColor
         "white",
     };
 
-    public static int ColorCode(string color)
-    {
-        return Array.IndexOf(colors,color);
-    }
+    public static int ColorCode(string color) =>
+        Array.IndexOf(colors, color);
 
-    public static string[] Colors()
-    {   
-        string[] colorsCopy = new string[colors.Length];
-        Array.Copy(colors, colorsCopy, colors.Length);
-        return colorsCopy;
-    }
+    public static string[] Colors() =>
+        (string[]) colors.Clone();
 }
