@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 public static class Acronym
@@ -8,13 +9,10 @@ public static class Acronym
     public static string Abbreviate(string phrase)
     {
         List<char> acronym = new List<char>();
-        string[] tokens = phrase.Split(delimiters);
+        string[] tokens = phrase.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
         foreach (string t in tokens)
         {
-            if (t.Length != 0)
-            {
-                acronym.Add(t[0]);
-            }
+            acronym.Add(t[0]);
         }
         return string.Join("", acronym).ToUpper();
     }
