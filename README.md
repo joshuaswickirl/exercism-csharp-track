@@ -5,6 +5,7 @@ Exercism's C# Track
 
 [exercism.io/profiles/joshuaswickirl](https://exercism.io/profiles/joshuaswickirl)
 
+
 Core Exercises (11/22)
 ----------------------
 1.  [Hello World](/hello-world)
@@ -19,8 +20,10 @@ Core Exercises (11/22)
 10. [Robot Name](/robot-name)
 11. [Allergies](/allergies)
 
-Extra Exercises (2/98)
+
+Extra Exercises (3/98)
 ----------------------
 ### Easy
+- [Acronym](/acronym)
 - [Isogram](/isogram)
 - [Pangram](/pangram)
