@@ -21,9 +21,10 @@ Core Exercises (11/22)
 11. [Allergies](/allergies)
 
 
-Extra Exercises (3/98)
+Extra Exercises (4/98)
 ----------------------
 ### Easy
 - [Acronym](/acronym)
+- [Grains](/grains)
 - [Isogram](/isogram)
 - [Pangram](/pangram)
