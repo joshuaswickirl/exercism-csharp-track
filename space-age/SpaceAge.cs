@@ -3,11 +3,10 @@
 public class SpaceAge
 {
     private readonly double earthAge;
-    public SpaceAge(int seconds)
-    {
-        const double earthYearInSeconds = 31557600.0;
+    private const double earthYearInSeconds = 31_557_600.0;
+    
+    public SpaceAge(int seconds) =>
         earthAge = seconds / earthYearInSeconds;
-    }
 
     public double OnEarth()   => earthAge / 1.00;
     public double OnMercury() => earthAge / 0.2408467;
