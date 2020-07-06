@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using Xunit;
 
-public class HighScoresTest
+public class HighScoresTests
 {
     [Fact]
     public void List_of_scores()
