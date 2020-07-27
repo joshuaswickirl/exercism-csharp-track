@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using Xunit;
-using System;
 
-public class RobotNameTest
+public class RobotNameTests
 {
     private readonly Robot robot = new Robot();
 
