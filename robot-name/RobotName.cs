@@ -55,7 +55,4 @@ public class Robot
 
     private string ThreeDigits() =>
         _random.Next(_between100,_and1000).ToString();
-    
-    private bool NameIsUnique(string name) =>
-        _usedNames.Contains(name) ? false : true;
 }
