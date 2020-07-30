@@ -21,7 +21,7 @@ Core Exercises (11/22)
 11. [Allergies](/allergies)
 
 
-Extra Exercises (6/98)
+Extra Exercises (7/98)
 ----------------------
 ### Easy
 - [Collatz Conjecture](/collatz-conjecture)
@@ -29,6 +29,7 @@ Extra Exercises (6/98)
 - [Isogram](/isogram)
 - [Pangram](/pangram)
 - [Perfect Numbers](/perfect-numbers)
+- [Sum Of Multiples](sum-of-multiples)
 
 ### Medium
 - [Acronym](/acronym)
