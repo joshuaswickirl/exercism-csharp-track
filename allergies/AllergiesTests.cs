@@ -2,7 +2,7 @@
 
 using Xunit;
 
-public class AllergiesTest
+public class AllergiesTests
 {
     [Fact]
     public void Testing_for_eggs_allergy_not_allergic_to_anything()

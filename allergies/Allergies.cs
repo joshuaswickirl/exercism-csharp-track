@@ -34,7 +34,7 @@ public class Allergies
 
     public Allergen[] List() => _allergies
                                     .Keys
-                                    .Where(allergen => _allergies[allergen])
+                                    .Where(IsAllergicTo)
                                     .Cast<Allergen>()
                                     .ToArray();
 }
