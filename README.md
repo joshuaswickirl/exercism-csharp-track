@@ -22,17 +22,18 @@ Core Exercises (12/22)
 12. [Grade School](/grade-school)
 
 
-Extra Exercises (9/98)
+Extra Exercises (10/98)
 ----------------------
 ### Easy
 - [Accumulate](/accumulate)
 - [Collatz Conjecture](/collatz-conjecture)
+- [Difference Of Squares](/difference-of-squares)
 - [Grains](/grains)
 - [Isogram](/isogram)
 - [Pangram](/pangram)
 - [Perfect Numbers](/perfect-numbers)
-- [Sum Of Multiples](sum-of-multiples)
 - [Phone Number](phone-number)
+- [Sum Of Multiples](sum-of-multiples)
 
 ### Medium
 - [Acronym](/acronym)
