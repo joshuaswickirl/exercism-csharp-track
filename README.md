@@ -22,7 +22,7 @@ Core Exercises (12/22)
 12. [Grade School](/grade-school)
 
 
-Extra Exercises (8/98)
+Extra Exercises (9/98)
 ----------------------
 ### Easy
 - [Accumulate](/accumulate)
@@ -32,6 +32,7 @@ Extra Exercises (8/98)
 - [Pangram](/pangram)
 - [Perfect Numbers](/perfect-numbers)
 - [Sum Of Multiples](sum-of-multiples)
+- [Phone Number](phone-number)
 
 ### Medium
 - [Acronym](/acronym)
