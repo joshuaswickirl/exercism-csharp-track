@@ -6,7 +6,7 @@ Exercism's C# Track
 [exercism.io/profiles/joshuaswickirl](https://exercism.io/profiles/joshuaswickirl)
 
 
-Core Exercises (11/22)
+Core Exercises (12/22)
 ----------------------
 1.  [Hello World](/hello-world)
 2.  [Two Fer](/two-fer)
@@ -19,6 +19,7 @@ Core Exercises (11/22)
 9.  [Nucleotide Count](/nucleotide-count)
 10. [Robot Name](/robot-name)
 11. [Allergies](/allergies)
+12. [Grade School](/grade-school)
 
 
 Extra Exercises (8/98)
