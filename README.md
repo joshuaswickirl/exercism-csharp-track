@@ -23,7 +23,7 @@ Core Exercises (13/22)
 13. [Rotational Cipher](/rotational-cipher)
 
 
-Extra Exercises (10/98)
+Extra Exercises (11/98)
 ----------------------
 ### Easy
 - [Accumulate](/accumulate)
@@ -33,8 +33,9 @@ Extra Exercises (10/98)
 - [Isogram](/isogram)
 - [Pangram](/pangram)
 - [Perfect Numbers](/perfect-numbers)
-- [Phone Number](phone-number)
-- [Sum Of Multiples](sum-of-multiples)
+- [Phone Number](/phone-number)
+- [Scrabble Score](/scrabble-score)
+- [Sum Of Multiples](/sum-of-multiples)
 
 ### Medium
 - [Acronym](/acronym)
