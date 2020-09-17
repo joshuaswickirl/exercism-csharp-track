@@ -23,7 +23,7 @@ Core Exercises (13/22)
 13. [Rotational Cipher](/rotational-cipher)
 
 
-Extra Exercises (11/98)
+Extra Exercises (12/98)
 ----------------------
 ### Easy
 - [Accumulate](/accumulate)
@@ -39,3 +39,4 @@ Extra Exercises (11/98)
 
 ### Medium
 - [Acronym](/acronym)
+- [Meetup](/meetup)
