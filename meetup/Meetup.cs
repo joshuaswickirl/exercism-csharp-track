@@ -35,48 +35,20 @@ public class Meetup
             case Schedule.Second:
             case Schedule.Third:
             case Schedule.Fourth:
-                return nth(dayOfWeek, schedule);
+                return findDatetime(dayOfWeek, _weekStart[schedule]);
             case Schedule.Last:
-                return last(dayOfWeek);
+                int daysInMonth = DateTime.DaysInMonth(_year, _month);
+                return findDatetime(dayOfWeek, daysInMonth-6);
             case Schedule.Teenth:
-                return teenth(dayOfWeek);
+                return findDatetime(dayOfWeek, 13);
             default:
                 throw new ArgumentException("Unknown schedule value.");
         }
     }
 
-    private DateTime nth(DayOfWeek dow, Schedule week)
+    private DateTime findDatetime(DayOfWeek dow, int startDate)
     {
-        DateTime dt = new DateTime(_year, _month, _weekStart[week]);
-        for (int d = 1; d <= 7; d++)
-        {
-            if (dt.DayOfWeek == dow)
-            {
-                break;
-            }
-            dt = dt.AddDays(1);
-        }
-        return dt;
-    }
-
-    private DateTime last(DayOfWeek dow)
-    {
-        int daysInMonth = DateTime.DaysInMonth(_year, _month);
-        DateTime dt = new DateTime(_year, _month, daysInMonth);
-        for (int d = 7; d >= 1; d--)
-        {
-            if (dt.DayOfWeek == dow)
-            {
-                break;
-            }
-            dt = dt.AddDays(-1);
-        }
-        return dt;
-    }
-
-    private DateTime teenth(DayOfWeek dow)
-    {
-        DateTime dt = new DateTime(_year, _month, 13);
+        DateTime dt = new DateTime(_year, _month, startDate);
         for (int d = 1; d <= 7; d++)
         {
             if (dt.DayOfWeek == dow)
