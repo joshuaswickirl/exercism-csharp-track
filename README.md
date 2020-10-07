@@ -24,7 +24,7 @@ Core Exercises (14/22)
 14. [Circular Buffer](/circular-buffer)
 
 
-Extra Exercises (13/98)
+Extra Exercises (14/98)
 ----------------------
 ### Easy
 - [Accumulate](/accumulate)
@@ -42,3 +42,4 @@ Extra Exercises (13/98)
 - [Acronym](/acronym)
 - [Largest Series Product](/largest-series-product)
 - [Meetup](/meetup)
+- [Pythagorean Triplet](/pythagorean-triplet)
