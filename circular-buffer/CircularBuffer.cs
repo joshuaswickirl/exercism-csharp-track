@@ -3,7 +3,7 @@
 public class CircularBuffer<T>
 {
     T[] buffer;
-    static int bufferLength;
+    readonly int bufferLength;
     int currentLoad = 0;
     int currentReadIndex = 0;
     int currentWriteIndex = 0;
